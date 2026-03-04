@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlexGlobalLogistics — корпоративный портал</title>
+  <style>
+    :root { --bg:#0b1220; --card:#111a2d; --accent:#3b82f6; --text:#e6edf7; --muted:#9fb0cf; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, Arial, sans-serif; background:linear-gradient(180deg,#0b1220,#0f1a31); color:var(--text); }
+    .container { max-width: 960px; margin: 0 auto; padding: 32px 20px 64px; }
+    .hero { background: rgba(17,26,45,.9); border:1px solid #253458; border-radius:16px; padding:28px; }
+    h1 { margin:0 0 10px; font-size: 32px; }
+    p { color:var(--muted); line-height:1.5; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(230px,1fr)); gap:14px; margin-top:18px; }
+    .card { background:var(--card); border:1px solid #253458; border-radius:12px; padding:16px; }
+    .card h3 { margin:0 0 8px; font-size:18px; }
+    .links a { display:inline-block; margin:6px 8px 0 0; color:#b9d3ff; text-decoration:none; border-bottom:1px dotted #7ea7ff; }
+    .footer { margin-top:22px; font-size:14px; color:#88a0c8; }
+    code { background:#1a2742; padding:3px 6px; border-radius:6px; color:#d7e6ff; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>FlexGlobalLogistics</h1>
+      <p>Черновая стартовая страница корпоративного портала. Сейчас это демо-макет, который можно открыть локально в браузере.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Сотрудники и роли</h3>
+          <p>Руководство, финансы, бухгалтерия, менеджеры и администратор с ролевым доступом.</p>
+        </article>
+        <article class="card">
+          <h3>Общие ресурсы</h3>
+          <p>Разделы по темам/отделам для хранения документов и материалов.</p>
+        </article>
+        <article class="card">
+          <h3>Объявления</h3>
+          <p>Публикация важных внутренних объявлений от служб компании.</p>
+        </article>
+        <article class="card">
+          <h3>Журнал входов</h3>
+          <p>Для администратора: динамика входов и IP-адреса сотрудников.</p>
+        </article>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>Быстрые переходы</h3>
+        <p class="links">
+          <a href="#">Астралдоки</a>
+          <a href="#">Эльба</a>
+          <a href="#">Контур Диадок</a>
+        </p>
+      </div>
+
+      <p class="footer">Чтобы посмотреть страницу локально, запустите в этой папке команду <code>python3 -m http.server 4173</code> и откройте <code>http://localhost:4173</code>.</p>
+    </section>
+  </main>
+</body>
+</html>
